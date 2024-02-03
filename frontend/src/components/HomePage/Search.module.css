@@ -1,0 +1,47 @@
+/* Styling for links */
+.link {
+    text-decoration: none;
+    text-align: start;
+}
+
+/* Styling for restaurant names */
+.restaurantName {
+    font-size: 19px;
+    color: black;
+}
+
+/* Styling for search images */
+.searchImg {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    float: left;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+/* Styling for dropdown container */
+.dropdownContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for dropdown select */
+.select {
+    margin: 10px;
+    padding: 15px 5px;
+    width: 400px;
+}
+
+/* Media query for responsive design - adjusts styles for screens up to 1000px */
+@media (max-width: 1000px) {
+    /* Change the display of the dropdown container to block */
+    .dropdownContainer {
+        display: block;
+    }
+
+    /* Adjust the width of the dropdown select for smaller screens */
+    .select {
+        width: 65%;
+    }
+}

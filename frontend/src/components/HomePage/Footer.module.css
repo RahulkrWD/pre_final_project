@@ -1,0 +1,41 @@
+/* Styling for the main container */
+.container {
+    background-color: #530353;
+    padding: 30px;
+    color: white;
+}
+
+/* Styling for links */
+.links {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Styling for social media icons - LinkedIn, Github, Instagram */
+.iconsLinkedin,
+.iconsGithub,
+.iconsInsta {
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+/* Styling specifically for LinkedIn icon */
+.iconsLinkedin {
+    color: white;
+    background-color: blue;
+}
+
+/* Styling specifically for Github icon */
+.iconsGithub {
+    color: black;
+    background-color: lightgrey;
+}
+
+/* Styling specifically for Instagram icon */
+.iconsInsta {
+    color: #bc2a8d;
+    background-color: white;
+}

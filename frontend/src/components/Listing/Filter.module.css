@@ -1,0 +1,20 @@
+input {
+  margin: 10px;
+}
+.select {
+  display: none;
+  padding: 4px;
+  border-radius: 7px;
+  outline: none;
+  color: #192f60;
+}
+@media (max-width: 1000px) {
+  .cuisineInput,
+  .costInput,
+  .sortInput {
+    display: none;
+  }
+  .select {
+    display: block;
+  }
+}

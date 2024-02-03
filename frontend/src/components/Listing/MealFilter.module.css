@@ -1,0 +1,55 @@
+.img {
+  width: 30vmin;
+  height: 25vmin;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.mealFilter {
+  max-width: 70vmin;
+  display: flex;
+  margin: 20px 30px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px gray, 2px 2px 10px gray;
+}
+.titles {
+  margin-left: 20px;
+  text-align: start;
+  color: #192f60;
+}
+.restaurantName {
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #192f60;
+}
+
+.rating,
+.mealName,
+.cuisines {
+  margin: 5px;
+}
+@media (max-width: 1100px) {
+  .mealFilter {
+    margin: 10px 15px;
+    padding: 10px;
+  }
+}
+@media (max-width: 670px) {
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+  .restaurantName {
+    font-size: 20px;
+  }
+}
+@media (max-width: 510px) {
+  .img {
+    width: 150px;
+    height: 100px;
+  }
+  .mealFilter {
+    display: block;
+  }
+}

@@ -1,0 +1,54 @@
+/* Styling for the navigation bar */
+.nav {
+    width: 100%;
+}
+
+/* Styling for login, signup, and logout buttons */
+.loginBtn, .signupBtn, .logOutBtn {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling specifically for signup and logout buttons */
+.signupBtn, .logOutBtn {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+/* Styling for the title */
+.title {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/* Media query for screens up to 600px */
+@media (max-width: 600px) {
+    /* Adjusting styles for smaller screens */
+    .title {
+        font-size: 20px;
+    }
+    .loginBtn, .signupBtn {
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+/* Media query for screens up to 400px */
+@media (max-width: 400px) {
+    /* Further adjustment for even smaller screens */
+    .title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+/* Media query for screens up to 350px */
+@media (max-width: 350px) {
+    /* Hiding the title for very small screens */
+    .title {
+        display: none;
+    }
+}
