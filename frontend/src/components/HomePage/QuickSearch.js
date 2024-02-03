@@ -10,7 +10,7 @@ function QuickSearch() {
     // Function to fetch quick search data from the server
     async function fetchQuickSearch() {
         try {
-            const res = await axios.get("http://localhost:4200/restaurant/quicksearch");
+            const res = await axios.get("https://trails-6dwz.onrender.com/restaurant/quicksearch");
             setQuickSearch(res.data);
         } catch (err) {
             console.log(err);
