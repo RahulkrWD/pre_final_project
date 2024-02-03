@@ -8,7 +8,7 @@ function Profile() {
     <NavBar/>
     </div>
       
-      profile
+      This the my profile
       
     </>
   )
