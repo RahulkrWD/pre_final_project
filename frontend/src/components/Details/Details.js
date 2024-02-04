@@ -16,7 +16,7 @@ function Details() {
     async function fetchRestId() {
         try {
           const response = await axios.get(
-            `https://trails-6dwz.onrender.com/restaurant/restaurants/${restId}`
+            `https://localhost:4200/restaurants/${restId}`
           );
           setDetails(response.data[0]);
         } catch (error) {

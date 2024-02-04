@@ -24,7 +24,7 @@ export default function Login() {
   const navigate = useNavigate();
   const handleLogin = async () => {
     try {
-   const response = await axios.post("https://trails-6dwz.onrender.com/createUser/login", {
+   const response = await axios.post("https://trails-6dwz.onrender.com/login", {
         email,
         password,
       });

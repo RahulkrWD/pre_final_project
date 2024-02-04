@@ -8,7 +8,7 @@ function CostFilter({ setCost }) {
     const { mealId } = useParams();
     
     // Base URL for fetching filtered results
-    let url = "https://trails-6dwz.onrender.com/restaurant/filter";
+    let url = "https://trails-6dwz.onrender.com/filter";
 
     // Function to filter results based on cost range
     function filterCost(event) {

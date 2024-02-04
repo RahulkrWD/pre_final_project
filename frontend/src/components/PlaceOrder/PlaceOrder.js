@@ -23,7 +23,7 @@ function PlaceOrder() {
     const navigate = useNavigate()
     async function fetchData(){
 
-        await axios.post("https://trails-6dwz.onrender.com/restaurant/placeOrder",{
+        await axios.post("https://trails-6dwz.onrender.com/placeOrder",{
          orderId, name, email, phone, address, cost, restName, orderItems, uniqueId
          });
         // console.log(response.data);
