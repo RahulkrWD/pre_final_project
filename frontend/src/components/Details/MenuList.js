@@ -22,7 +22,7 @@ function MenuList({ heading }) {
   async function fetchMenuData() {
     try {
       const response = await axios.get(
-        `https://trails-6dwz.onrender.com/menu/${menuId}`
+        `http://localhost:4200/restaurant/menu/${menuId}`
       );
       setMenu(response.data);
       sessionStorage.setItem("restaurant", heading.restaurant_name);

@@ -29,7 +29,7 @@ export default function Signup() {
 
   const handleSignup = async () => {
     try {
-      await axios.post("https://trails-6dwz.onrender.com/register", {
+      await axios.post("http://localhost:4200/createUser/register", {
         name, email, phone, password, uniqueId
         
       });

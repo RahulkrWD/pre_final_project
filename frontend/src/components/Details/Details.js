@@ -16,7 +16,7 @@ function Details() {
     async function fetchRestId() {
         try {
           const response = await axios.get(
-            `https://localhost:4200/restaurants/${restId}`
+            `http://localhost:4200/restaurant/restaurants/${restId}`
           );
           setDetails(response.data[0]);
         } catch (error) {

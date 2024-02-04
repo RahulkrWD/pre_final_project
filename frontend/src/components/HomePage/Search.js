@@ -17,7 +17,7 @@ function Search() {
     // Fetch states from the API
     async function fetchStates() {
         try {
-            const response = await axios.get("https://trails-6dwz.onrender.com/location");
+            const response = await axios.get("http://localhost:4200/restaurant/location");
             setStates(response.data);
         } catch (err) {
             console.log(err);
@@ -28,7 +28,7 @@ function Search() {
     async function fetchRestaurants() {
         try {
             const response = await axios.get(
-                `https://trails-6dwz.onrender.com/restaurant/restaurants?stateId=${selectedState}`
+                `http://localhost:4200/restaurant/restaurants?stateId=${selectedState}`
             );
             setRestaurants(response.data);
         } catch (err) {

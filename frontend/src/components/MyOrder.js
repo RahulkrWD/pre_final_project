@@ -7,7 +7,7 @@ function MyOrder() {
     const sessionData = sessionStorage.getItem("userInfo");
     let data  = JSON.parse(sessionData);
     async function fetchMyorder(){
-     const response = await axios.get(`https://trails-6dwz.onrender.com/order?id=${data.uniqueId}`);
+     const response = await axios.get(`http://localhost:4200/restaurant/order?id=${data.uniqueId}`);
         setValue(response.data);
        // console.log(response.data)
     }

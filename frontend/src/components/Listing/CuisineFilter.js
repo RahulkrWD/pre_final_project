@@ -8,7 +8,7 @@ function CuisineFilter({ setCuisine }) {
     const { mealId } = useParams();
     
     // Base URL for fetching filtered results
-    let url = "https://trails-6dwz.onrender.com/filter";
+    let url = "http://localhost:4200/restaurant/filter";
     
     // Function to handle cuisine selection and fetch filtered results
     function handleCuisine(event) {

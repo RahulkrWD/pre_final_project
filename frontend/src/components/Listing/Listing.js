@@ -23,7 +23,7 @@ function Listing() {
   const fetchMeal = async () => {
     try {
       const response = await axios.get(
-        `https://trails-6dwz.onrender.com/restaurants?mealId=${mealId}`
+        `http://localhost:4200/restaurant/restaurants?mealId=${mealId}`
       );
       setMeal(response.data);
     } catch (err) {

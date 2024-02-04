@@ -16,7 +16,7 @@ function GoogleAuthLogin() {
       //  console.log(name, email);
   
         // Make a POST request to your server for Google login
-      const response = await axios.post('https://trails-6dwz.onrender.com/googleAuth/login', {
+      const response = await axios.post('http://localhost:4200/createUser/googleAuth/login', {
           name,
           email,
         

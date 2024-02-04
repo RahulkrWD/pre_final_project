@@ -19,7 +19,7 @@ function NavBar() {
     try {
       // Fetch user info from the server using the token
       const response = await fetch(
-        "https://trails-6dwz.onrender.com/userInfo",
+        "http://localhost:4200/createUser/userInfo",
         {
           headers: {
             "x-access-token": token,
