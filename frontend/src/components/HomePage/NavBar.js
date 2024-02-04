@@ -77,7 +77,10 @@ function NavBar() {
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to={"/profile"}>
+                    <Link
+                      className="dropdown-item"
+                      to={`/profile/${userInfo.uniqueId}`}
+                    >
                       Profile
                     </Link>
                   </li>

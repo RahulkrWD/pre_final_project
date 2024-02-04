@@ -20,7 +20,6 @@ export default function OrderDetails({datas}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
   return (
     <div>
       <Button onClick={handleOpen}>{datas.orderId}</Button>
@@ -30,10 +29,19 @@ export default function OrderDetails({datas}) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box className='border-0 rounded-3' sx={style}>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-          <div>
-          {datas.orderId}
+          <div className='container'>
+          <h5 className='text-dark'>order id: {datas.orderId}</h5>
+          <p>Name: {datas.name}</p>
+          <p>Email: {datas.email}</p>
+          <p>Phone: {datas.phone}</p>
+          <p>Restaurant name: {datas.restName}</p>
+          <p>order items: {datas.orderItems}</p>
+          <p> Cost: {datas.cost}</p>
+          <p>Address: {datas.address}</p>
+          <p>Order Status: Done</p>
+
 
           </div>
             
@@ -43,3 +51,5 @@ export default function OrderDetails({datas}) {
     </div>
   );
 }
+
+

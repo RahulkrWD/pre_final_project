@@ -120,5 +120,15 @@ router.post("/googleAuth/login", async function(req, res){
   }
 });
 
+router.get("/profile/:id", async function(req, res){
+  let query = {};
+  let id = +req.params.id;
+  if(id){
+    query = {uniqueId: id}
+  }
+  const profile = await userModel.findOne(query)
+  res.send(profile)
+})
+
 // Export the router for use in the main application
 module.exports = router;

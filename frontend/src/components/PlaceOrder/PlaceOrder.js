@@ -44,12 +44,12 @@ function PlaceOrder() {
     <hr/>
     </div>
     <div className={styles.details}>
-    <TextField id="outlined-name-input" value={name} onChange={(e)=> setName(e.target.value)} label="Name" variant="outlined" />
+    <TextField id="outlined-name-input" value={name} onChange={(e)=> setName(e.target.value)} label="Name" variant="outlined"/>
     <TextField id="outlined-basic" label="Email" value={email} onChange={(e)=> setEmail(e.target.value)} variant="outlined" />
     
-    <TextField id="outlined-number-input" label="Phone Number" value={phone} onChange={(e)=> setPhone(e.target.value)} variant="outlined" />
+    <TextField id="outlined-number-input" label="Phone Number" value={phone} onChange={(e)=> setPhone(e.target.value)} variant="outlined"/>
 
-    <TextField id="outlined-address-input" label="Address" value={address} onChange={(e)=> setAddress(e.target.value)} variant="outlined" />
+    <TextField id="outlined-address-input" label="Address" value={address} onChange={(e)=> setAddress(e.target.value)} variant="outlined"/>
     </div>
    <center>
    <button className='btn text-bg-success' onClick={fetchData}>Click</button>

@@ -7,7 +7,7 @@ import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import MyOrder from "./components/MyOrder";
-import Profile from "./components/Profile"
+import Profile from "./components/profile/Profile"
 function App() {
   return (
    <Router>
@@ -19,7 +19,7 @@ function App() {
     <Route exact path="/login" element={<Login/>}/>
     <Route exact path='/signup' element={<Signup/>}/>
     <Route exact path='/MyOrder' element={<MyOrder/>}/>
-    <Route exact path='/profile' element={<Profile/>}/>
+    <Route exact path='/profile/:id' element={<Profile/>}/>
    </Routes>
    </Router>
   );
