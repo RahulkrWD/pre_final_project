@@ -24,6 +24,9 @@ app.use(bodyParser.json()); // Parse JSON in the request body using body-parser
 app.get("/", function(req, res){
     res.send("Welcome to my Zomato App");
 });
+app.get("/home", function(req, res){
+  res.send("Welcome to my Zomato App");
+});
 
 // restaurant Api
 app.get("/location", async function (req, res) {
