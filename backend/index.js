@@ -7,6 +7,7 @@ const createUser = require("./Routes/createUser"); // Importing the route for us
 const cors = require("cors");
 
 const crypto = require('crypto')
+const port = process.env.PORT || 4200;
 
 app.use(cors()); // Enable Cross-Origin Resource Sharing for handling requests from different origins
 app.use(express.json()); // Parse incoming request bodies in JSON format
@@ -73,4 +74,4 @@ app.use("/createUser", createUser);
   
 
 // Start the server on port 4200
-app.listen(4200);
+app.listen(port);
