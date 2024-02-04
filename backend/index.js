@@ -15,6 +15,11 @@ app.get("/", function(req, res){
     res.send("Welcome to my Zomato App");
 });
 
+app.get("/home", function(req, res){
+    res.send("Welcome to my Zomato App home");
+});
+
+
 // Restaurant route
 app.use("/restaurant", restaurant);
 
