@@ -1,69 +1,9 @@
-// import React, { useEffect, useState } from 'react';
-// import NavBar from "../HomePage/NavBar";
-// import { useParams} from 'react-router-dom';
-// import axios from "axios"
-// import styles from "./profile.module.css"
-
-// function Profile() {
-// const [profile, setProfile] = useState()
-//   const id = useParams()
-//  // console.log(id)
-
-//   async function fetchProfile(){
-//     try{
-//       const response = await axios.get(`http://localhost:4200/createUser/profile/${id}`);
-
-//       setProfile(response.data)
-//    //   console.log(response.data);
-
-//     }catch(err){
-//       console.log('invalid', err)
-//     }
-//   }
-// useEffect(()=>{
-// fetchProfile()
-// },)
-
-//   return (
-//     <>
-//      <div className='bg-dark'>
-//     <NavBar/>
-//     </div>
-//     <center className='mt-4'>
-//     <div className={`${styles.profileCard}`}>
-//     {profile ? (
-//       profile.map((data)=>(
-//         <h5>{data.name}</h5>
-//       ))
-
-//     ) : ("")}
-//       <div className={`${styles.cardHeader}`}>
-//         <div className={`${styles.pic}`}>
-//           <img className={styles.picImg}
-//             src=""
-//             alt=""
-//           />
-//         </div>
-//         <div className="">{}</div>
-//         <div className="">Frontend Developer</div>
-//         <div className="">
-//           <i className="fas fa-map-marker-alt"></i> Dublin
-//         </div>
-
-//       </div>
-//     </div>
-//     </center>
-
-//     </>
-//   )
-// }
-
-// export default Profile
 import React, { useEffect, useState } from "react";
 import NavBar from "../HomePage/NavBar";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import styles from "./profile.module.css";
+import EditProfile from "./EditProfile";
 
 function Profile() {
   const [profiles, setProfile] = useState(null);
@@ -85,6 +25,7 @@ function Profile() {
     fetchProfile();
   }, [id]); // Add id to the dependency array
 
+  
   return (
     <>
       <div className="bg-dark">
@@ -108,6 +49,7 @@ function Profile() {
                   </p>
                 ) : null}
               </div>
+              <EditProfile/>
             </div>
           ) : (
             <p>Loading...</p>

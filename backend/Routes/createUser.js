@@ -130,5 +130,26 @@ router.get("/profile/:id", async function(req, res){
   res.send(profile)
 })
 
+router.put("/profile/update/:id", async function(req, res){
+  let query = {};
+  let id = +req.params.id;
+  if(id){
+    query = {uniqueId: id};
+  }
+  try{
+    const updateProfile = await userModel.updateOne(query, {
+        $set:{
+          name: req.body.name,
+          email: req.body.email,
+          phone: req.body.phone
+        }
+    });
+  res.send(updateProfile)
+  }catch(err){
+    console.log("user not update", err)
+  }
+  
+})
+
 // Export the router for use in the main application
 module.exports = router;
